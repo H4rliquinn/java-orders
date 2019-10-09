@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "agents")
+@Table(name = "customers")
 public class Customer
 {
     @Id
@@ -33,7 +33,7 @@ public class Customer
     @JsonIgnoreProperties("customers")
     private Agent agent;
 
-    @OneToMany(mappedBy = "order",cascade=CascadeType.ALL)
+    @OneToMany(mappedBy = "customer",cascade=CascadeType.ALL)
     @JsonIgnoreProperties("customer")
     private List<Order> orders = new ArrayList<>();
 

@@ -14,15 +14,15 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 public class SeedData implements CommandLineRunner
 {
-    private CustomerRepository custrepos;
-    private AgentRepository agentrepos;
-    private OrderRepository ordersrepos;
+    private CustomerRepository custrepo;
+    private AgentRepository agentrepo;
+    private OrderRepository ordersrepo;
 
-    public SeedData(CustomerRepository custrepos, AgentRepository agentrepos, OrderRepository ordersrepos)
+    public SeedData(CustomerRepository custrepo, AgentRepository agentrepo, OrderRepository ordersrepo)
     {
-        this.custrepos = custrepos;
-        this.agentrepos = agentrepos;
-        this.ordersrepos = ordersrepos;
+        this.custrepo = custrepo;
+        this.agentrepo = agentrepo;
+        this.ordersrepo = ordersrepo;
     }
 
     @Override
@@ -80,56 +80,56 @@ public class SeedData implements CommandLineRunner
         Order o11 = new Order(1500.00, 600.00, c08, "SOD");
         Order o12 = new Order(2500.00, 400.00, c25, "SOD");
 
-        agentrepos.save(a01);
-        agentrepos.save(a02);
-        agentrepos.save(a03);
-        agentrepos.save(a04);
-        agentrepos.save(a05);
-        agentrepos.save(a06);
-        agentrepos.save(a07);
-        agentrepos.save(a08);
-        agentrepos.save(a09);
-        agentrepos.save(a10);
-        agentrepos.save(a11);
-        agentrepos.save(a12);
+        agentrepo.save(a01);
+        agentrepo.save(a02);
+        agentrepo.save(a03);
+        agentrepo.save(a04);
+        agentrepo.save(a05);
+        agentrepo.save(a06);
+        agentrepo.save(a07);
+        agentrepo.save(a08);
+        agentrepo.save(a09);
+        agentrepo.save(a10);
+        agentrepo.save(a11);
+        agentrepo.save(a12);
 
-        custrepos.save(c01);
-        custrepos.save(c02);
-        custrepos.save(c03);
-        custrepos.save(c04);
-        custrepos.save(c05);
-        custrepos.save(c06);
-        custrepos.save(c07);
-        custrepos.save(c08);
-        custrepos.save(c09);
-        custrepos.save(c10);
-        custrepos.save(c11);
-        custrepos.save(c12);
-        custrepos.save(c13);
-        custrepos.save(c14);
-        custrepos.save(c15);
-        custrepos.save(c16);
-        custrepos.save(c17);
-        custrepos.save(c18);
-        custrepos.save(c19);
-        custrepos.save(c20);
-        custrepos.save(c21);
-        custrepos.save(c22);
-        custrepos.save(c23);
-        custrepos.save(c24);
-        custrepos.save(c25);
+        custrepo.save(c01);
+        custrepo.save(c02);
+        custrepo.save(c03);
+        custrepo.save(c04);
+        custrepo.save(c05);
+        custrepo.save(c06);
+        custrepo.save(c07);
+        custrepo.save(c08);
+        custrepo.save(c09);
+        custrepo.save(c10);
+        custrepo.save(c11);
+        custrepo.save(c12);
+        custrepo.save(c13);
+        custrepo.save(c14);
+        custrepo.save(c15);
+        custrepo.save(c16);
+        custrepo.save(c17);
+        custrepo.save(c18);
+        custrepo.save(c19);
+        custrepo.save(c20);
+        custrepo.save(c21);
+        custrepo.save(c22);
+        custrepo.save(c23);
+        custrepo.save(c24);
+        custrepo.save(c25);
 
-        ordersrepos.save(o01);
-        ordersrepos.save(o02);
-        ordersrepos.save(o03);
-        ordersrepos.save(o04);
-        ordersrepos.save(o05);
-        ordersrepos.save(o06);
-        ordersrepos.save(o07);
-        ordersrepos.save(o08);
-        ordersrepos.save(o09);
-        ordersrepos.save(o10);
-        ordersrepos.save(o11);
-        ordersrepos.save(o12);
+        ordersrepo.save(o01);
+        ordersrepo.save(o02);
+        ordersrepo.save(o03);
+        ordersrepo.save(o04);
+        ordersrepo.save(o05);
+        ordersrepo.save(o06);
+        ordersrepo.save(o07);
+        ordersrepo.save(o08);
+        ordersrepo.save(o09);
+        ordersrepo.save(o10);
+        ordersrepo.save(o11);
+        ordersrepo.save(o12);
     }
 }
